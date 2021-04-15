@@ -13,4 +13,8 @@ connection.query("select user_name,email,mobile from p_users limit 10",function 
     }else{
         console.log(results)
     }
+
+
 })
+
+
