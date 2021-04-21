@@ -35,7 +35,9 @@ app.get('/user/center',function(require,results){
 })
 // 用户列表
 app.get('/user/list',(require,results)=>{
-
+    connection.query('select * from p_users limit 5',function(error,require,fields){
+        results.send(require)
+    })
 })
 
 app.get('/',(require,results)=>{
